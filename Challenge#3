@@ -1,0 +1,4 @@
+#Using the docker client pull the image called alpine with the edge tag.
+
+Option1: docker contailer run alpine:edge
+Option2: docker pull alpine:edge
