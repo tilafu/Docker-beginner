@@ -1,0 +1,16 @@
+#Run the Nginx web server in Docker container, in the background, and publish port 80
+
+docker container run -d -p 80:80 nginx
+
+#Connect to the server from another machine using a browser
+
+run COMMAND: ip address show
+
+#look for the ip link/ether from the list and check if the server shows
+
+#Check the web server logs
+
+docker container logs ID #where ID is the container's id
+
+#Attach to the container in which nginx is running
+docker container exec -it ID bash
