@@ -1,0 +1,29 @@
+#Launch a container from the alpine:edge image. Get shell access to the container.
+
+docker container run -it alpine:edge
+
+#Create a new file called a.txt in the /root directory of the container
+
+touch /root/a.txt
+ls /root/
+
+#Exit the container without stopping it
+
+Ctrl + P + Q
+
+#Check that the container is still running
+
+docker container ls -a #then check whether status is running
+
+#Attach to the container by running the sh command in the container
+
+docker container exec -it ID sh
+
+#Check that the file (a.txt) still exists
+
+ls /root/ 
+
+
+#Exit the container
+
+exit
