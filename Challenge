@@ -1,0 +1,3 @@
+#Using the Docker CLI search on Docker Hub for an image called mariadb
+
+docker search mariadb
