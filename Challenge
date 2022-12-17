@@ -1,0 +1,16 @@
+#Run Nginx and Apache containers that publish random ports
+
+docker container run -it -P nginx
+docker container run -it -P httpd
+
+#Stop the containers
+
+docker container stop $(docker container ls -a)
+
+#Remove all stopped containers
+
+docker container rm $(docker container ls -a -f status=exited)
+
+#An alternative way of running performing the last two commands
+
+docker container rm -f $(docker container ls -a)
