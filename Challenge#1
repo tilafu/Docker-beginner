@@ -1,0 +1,5 @@
+#Using the docker client, display the help of the docker management command container and the help of the run subcommand
+
+docker container COMMAND --help
+
+docker container run --help
